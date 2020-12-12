@@ -11,7 +11,7 @@ from email.mime.text import MIMEText
 dict_hkjss=dict()
 dict_hkjss["main"]="https://hkjss.cn/"
 dict_hkjss["dologin_url"]="dologin.php"
-dict_hkjss["auth"]={"username":"623712611@qq.com","password":"ztz479803242641"}
+dict_hkjss["auth"]={"username":"xxxxxxxxx@xxx.com","password":"xxxxxxxxxxx"}
 dict_hkjss["headers"]={'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
 num_used_now=0
 num_use=0
@@ -61,14 +61,14 @@ def fun_get_infor(response):
 
 
 
-def send_email(title,content,recive_email='623712611@qq.com'):
+def send_email(title,content,recive_email='xxxxxxxxx@qq.com'):
     '''
     发送邮件，  
     参数为title、content和email(default)，  
     无返回，操作成功会直接写入log文件'''
-    msg_from = '497309060@qq.com'  # 发送方邮箱地址。
-    password = 'qsehffovhadubjjc'  # 发送方QQ邮箱授权码，不是QQ邮箱密码。
-    #msg_to = '623712611@qq.com'  # 收件人邮箱地址。
+    msg_from = 'xxxxxxxxx@qq.com'  # 发送方邮箱地址。
+    password = 'xxxxxxxxxxxxxxxxxx'  # 发送方QQ邮箱授权码，不是QQ邮箱密码。
+    #msg_to = 'xxxxxxxxx@qq.com'  # 收件人邮箱地址。
 
     subject = "VPN Monitor  %s" % (title)  # 主题。
     # content = json.dump(gen_content(key))  # 邮件正文内容。
