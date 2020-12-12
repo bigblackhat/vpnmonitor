@@ -1,0 +1,14 @@
+[Unit]
+Description=vpnmonitor deamon
+After=rc-local.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/root/vpn
+ExecStart=/usr/bin/python vpnmonitor.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
